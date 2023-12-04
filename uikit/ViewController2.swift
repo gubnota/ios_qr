@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController2: UIViewController {
-
+    @IBOutlet weak var grid: UICollectionView!
+    let data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]
 //    init(){
 //        super.init(nibName: "View2", bundle: nil)
 //    }
@@ -24,11 +25,16 @@ class ViewController2: UIViewController {
         // Load the view from the xib file
         if let view = Bundle.main.loadNibNamed("View2", owner: self, options: nil)?.first as? UIView {
             self.view = view
+            initCollection()
         }
         // Do any additional setup after loading the view.
     }
     
-
+    func initCollection() -> Void {
+        grid.delegate = self
+        grid.dataSource = self
+        grid.register(UINib(nibName: "ItemCell", bundle: nil), forCellWithReuseIdentifier: "ItemCellName")
+    }
     /*
     // MARK: - Navigation
 
@@ -40,3 +46,26 @@ class ViewController2: UIViewController {
     */
 
 }
+
+extension ViewController2 : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.data.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCellName", for: indexPath) as! ItemCell
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+        let bgImg = UIImageView(image: UIImage(named:"record-button"))
+        cell.backgroundView = bgImg
+        return cell
+    }
+    
+    
+}
+
+extension ViewController2 : UICollectionViewDelegate {
+    
+}
+

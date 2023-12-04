@@ -18,6 +18,8 @@
 		94E70FF42B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FF32B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift */; };
 		94E710032B1E51DF00B71BBE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710022B1E51DF00B71BBE /* ViewController2.swift */; };
 		94E710072B1E540100B71BBE /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E710062B1E540100B71BBE /* View2.xib */; };
+		94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710092B1E5C9500B71BBE /* ItemCell.swift */; };
+		94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E7100A2B1E5C9500B71BBE /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		94E70FF32B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94E710022B1E51DF00B71BBE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		94E710062B1E540100B71BBE /* View2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
+		94E710092B1E5C9500B71BBE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		94E7100A2B1E5C9500B71BBE /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		94E70FCF2B1E4B2200B71BBE /* uikit */ = {
 			isa = PBXGroup;
 			children = (
+				94E710082B1E5B8200B71BBE /* ItemCell */,
 				94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */,
 				94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */,
 				94E70FD42B1E4B2200B71BBE /* ViewController.swift */,
@@ -131,6 +136,15 @@
 				94E70FF32B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift */,
 			);
 			path = uikitUITests;
+			sourceTree = "<group>";
+		};
+		94E710082B1E5B8200B71BBE /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				94E710092B1E5C9500B71BBE /* ItemCell.swift */,
+				94E7100A2B1E5C9500B71BBE /* ItemCell.xib */,
+			);
+			path = ItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,7 @@
 			files = (
 				94E70FDD2B1E4B2300B71BBE /* LaunchScreen.storyboard in Resources */,
 				94E70FDA2B1E4B2300B71BBE /* Assets.xcassets in Resources */,
+				94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */,
 				94E70FD82B1E4B2200B71BBE /* Main.storyboard in Resources */,
 				94E710072B1E540100B71BBE /* View2.xib in Resources */,
 			);
@@ -269,6 +284,7 @@
 				94E710032B1E51DF00B71BBE /* ViewController2.swift in Sources */,
 				94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */,
 				94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */,
+				94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
