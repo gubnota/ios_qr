@@ -47,7 +47,7 @@ class ViewController2: UIViewController {
 
 }
 
-extension ViewController2 : UICollectionViewDataSource {
+extension ViewController2 : UICollectionViewDataSource,UIGestureRecognizerDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.count
     }
@@ -59,10 +59,23 @@ extension ViewController2 : UICollectionViewDataSource {
         cell.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         let bgImg = UIImageView(image: UIImage(named:"record-button"))
         cell.backgroundView = bgImg
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped(_:)))
+        tapGesture.delegate = self
+        cell.addGestureRecognizer(tapGesture)
+
         return cell
     }
     
-    
+    @objc func cellTapped(_ gesture: UITapGestureRecognizer){
+        // Handle the tap event on the cell
+        if let tappedCell = gesture.view as? UICollectionViewCell {
+            // Your code to handle the tap event on the cell
+            print("tapped cell")
+            let destCtrlr = Glyph(nibName: "Glyph", bundle: nil)
+            self.navigationController?.pushViewController(destCtrlr, animated: true)
+
+        }
+    }
 }
 
 extension ViewController2 : UICollectionViewDelegate {

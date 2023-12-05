@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94CEBBDA2B1F3E6F00EC8F97 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */; };
+		94CEBBDB2B1F3E6F00EC8F97 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */; };
+		94CEBBDE2B1F475D00EC8F97 /* SVGPath in Frameworks */ = {isa = PBXBuildFile; productRef = 94CEBBDD2B1F475D00EC8F97 /* SVGPath */; };
 		94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */; };
 		94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */; };
 		94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD42B1E4B2200B71BBE /* ViewController.swift */; };
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Glyph.swift; path = uikit/Glyph/Glyph.swift; sourceTree = SOURCE_ROOT; };
+		94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Glyph.xib; path = uikit/Glyph/Glyph.xib; sourceTree = SOURCE_ROOT; };
 		94E70FCD2B1E4B2200B71BBE /* uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CEBBDE2B1F475D00EC8F97 /* SVGPath in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,8 @@
 			children = (
 				94E710092B1E5C9500B71BBE /* ItemCell.swift */,
 				94E7100A2B1E5C9500B71BBE /* ItemCell.xib */,
+				94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */,
+				94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */,
 			);
 			path = ItemCell;
 			sourceTree = "<group>";
@@ -163,6 +171,9 @@
 			dependencies = (
 			);
 			name = uikit;
+			packageProductDependencies = (
+				94CEBBDD2B1F475D00EC8F97 /* SVGPath */,
+			);
 			productName = uikit;
 			productReference = 94E70FCD2B1E4B2200B71BBE /* uikit.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 94E70FC42B1E4B2200B71BBE;
+			packageReferences = (
+				94CEBBDC2B1F475D00EC8F97 /* XCLocalSwiftPackageReference "SVGPath" */,
+			);
 			productRefGroup = 94E70FCE2B1E4B2200B71BBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +269,7 @@
 				94E70FDA2B1E4B2300B71BBE /* Assets.xcassets in Resources */,
 				94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */,
 				94E70FD82B1E4B2200B71BBE /* Main.storyboard in Resources */,
+				94CEBBDB2B1F3E6F00EC8F97 /* Glyph.xib in Resources */,
 				94E710072B1E540100B71BBE /* View2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +299,7 @@
 				94E710032B1E51DF00B71BBE /* ViewController2.swift in Sources */,
 				94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */,
 				94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */,
+				94CEBBDA2B1F3E6F00EC8F97 /* Glyph.swift in Sources */,
 				94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -449,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -474,7 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +519,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +649,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		94CEBBDC2B1F475D00EC8F97 /* XCLocalSwiftPackageReference "SVGPath" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SVGPath;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94CEBBDD2B1F475D00EC8F97 /* SVGPath */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SVGPath;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94E70FC52B1E4B2200B71BBE /* Project object */;
 }
