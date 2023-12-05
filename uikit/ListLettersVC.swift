@@ -1,5 +1,5 @@
 //
-//  ViewController2.swift
+//  ListLettersVC.swift
 //  uikit
 //
 //  Created by Vladislav Muravyev on 04.12.2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ListLettersVC: UIViewController {
     @IBOutlet weak var grid: UICollectionView!
     let data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]
 //    init(){
-//        super.init(nibName: "View2", bundle: nil)
+//        super.init(nibName: "ListLetters", bundle: nil)
 //    }
 //    
 //    
@@ -23,7 +23,7 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Load the view from the xib file
-        if let view = Bundle.main.loadNibNamed("View2", owner: self, options: nil)?.first as? UIView {
+        if let view = Bundle.main.loadNibNamed("ListLetters", owner: self, options: nil)?.first as? UIView {
             self.view = view
             initCollection()
         }
@@ -34,6 +34,7 @@ class ViewController2: UIViewController {
         grid.delegate = self
         grid.dataSource = self
         grid.register(UINib(nibName: "ItemCell", bundle: nil), forCellWithReuseIdentifier: "ItemCellName")
+//        grid.setCollectionViewLayout(LeftFlowLayout(), animated:true)
     }
     /*
     // MARK: - Navigation
@@ -47,7 +48,7 @@ class ViewController2: UIViewController {
 
 }
 
-extension ViewController2 : UICollectionViewDataSource,UIGestureRecognizerDelegate {
+extension ListLettersVC : UICollectionViewDataSource,UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.count
     }
@@ -56,9 +57,11 @@ extension ViewController2 : UICollectionViewDataSource,UIGestureRecognizerDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCellName", for: indexPath) as! ItemCell
         cell.clipsToBounds = true
         cell.layer.cornerRadius = 10
-        cell.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
-        let bgImg = UIImageView(image: UIImage(named:"record-button"))
-        cell.backgroundView = bgImg
+        cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
+//        let bgImg = UIImageView(image: UIImage(named:"record-button"))
+//        cell.backgroundView = bgImg
+        cell.lbl.text = "\(self.data[indexPath.item])"
+        cell.lbl.sizeToFit()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped(_:)))
         tapGesture.delegate = self
         cell.addGestureRecognizer(tapGesture)
@@ -68,17 +71,29 @@ extension ViewController2 : UICollectionViewDataSource,UIGestureRecognizerDelega
     
     @objc func cellTapped(_ gesture: UITapGestureRecognizer){
         // Handle the tap event on the cell
-        if let tappedCell = gesture.view as? UICollectionViewCell {
+        if let tappedCell = gesture.view as? ItemCell {//UICollectionViewCell
             // Your code to handle the tap event on the cell
-            print("tapped cell")
-            let destCtrlr = Glyph(nibName: "Glyph", bundle: nil)
+            print("tapped cell \(tappedCell.lbl?.text)")
+            let destCtrlr = GlyphVC(nibName: "Glyph", bundle: nil)
+            destCtrlr.label = tappedCell.lbl.text ?? "";
             self.navigationController?.pushViewController(destCtrlr, animated: true)
 
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Set the size of each item
+        return CGSize(width: 120, height: 120)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        // Set the spacing between cells
+        return 100
+    }
+    
 }
 
-extension ViewController2 : UICollectionViewDelegate {
+extension ListLettersVC : UICollectionViewDelegate {
     
 }
 

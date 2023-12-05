@@ -9,8 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Glyph" customModule="uikit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlyphVC" customModule="uikit" customModuleProvider="target">
             <connections>
+                <outlet property="lbl" destination="IzW-bK-eJ6" id="JiC-Z5-TaJ"/>
                 <outlet property="mainLogoView" destination="9kA-ER-Ztm" id="Dsx-VX-gcO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,12 +28,20 @@
                         <constraint firstAttribute="width" secondItem="9kA-ER-Ztm" secondAttribute="height" id="D9J-zP-59a"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzW-bK-eJ6">
+                    <rect key="frame" x="143" y="611.5" width="89.5" height="45.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray5Color"/>
             <constraints>
                 <constraint firstItem="9kA-ER-Ztm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="TM4-ED-B9G"/>
+                <constraint firstItem="IzW-bK-eJ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W4C-cP-O7z"/>
                 <constraint firstItem="9kA-ER-Ztm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mgd-0d-WFK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IzW-bK-eJ6" secondAttribute="bottom" constant="10" id="oPb-2r-aI0"/>
                 <constraint firstItem="9kA-ER-Ztm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="wrL-Hw-GJC"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-11"/>
@@ -43,7 +52,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

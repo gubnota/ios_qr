@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
     @objc func buttonTapped(){
         print("tapped")
-        let destCtrlr = ViewController2(nibName: "View2", bundle: nil)
+        let destCtrlr = ListLettersVC(nibName: "ListLetters", bundle: nil)
         self.navigationController?.pushViewController(destCtrlr, animated: true)
     }
     

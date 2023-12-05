@@ -20,12 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-gd-r5v">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-gd-r5v">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="krc-Of-eWF">
-                        <size key="itemSize" width="128" height="128"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="c5p-8h-oPj">
+                        <size key="itemSize" width="110" height="110"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -34,6 +33,12 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="Hbn-gd-r5v" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="CTG-JM-WMc"/>
+                <constraint firstItem="Hbn-gd-r5v" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Kiw-fM-b95"/>
+                <constraint firstItem="Hbn-gd-r5v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NR3-0g-quK"/>
+                <constraint firstItem="Hbn-gd-r5v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uE2-U5-qkm"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="-11.244377811094454"/>
         </view>
     </objects>

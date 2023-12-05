@@ -17,16 +17,32 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISN-LN-amh">
+                        <rect key="frame" x="1" y="30.000000000000004" width="108" height="50.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="ISN-LN-amh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0zK-i4-Vbt"/>
+                <constraint firstAttribute="trailing" secondItem="ISN-LN-amh" secondAttribute="trailing" constant="1" id="V98-uC-Pf3"/>
+                <constraint firstItem="ISN-LN-amh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="az2-RL-lP2"/>
+            </constraints>
             <size key="customSize" width="110" height="110"/>
+            <connections>
+                <outlet property="lbl" destination="ISN-LN-amh" id="BJ8-4V-TPX"/>
+            </connections>
             <point key="canvasLocation" x="175.57251908396947" y="9.8591549295774659"/>
         </collectionViewCell>
     </objects>
     <resources>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

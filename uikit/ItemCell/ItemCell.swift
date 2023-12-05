@@ -8,7 +8,8 @@
 import UIKit
 
 class ItemCell: UICollectionViewCell {
-
+    @IBOutlet weak var lbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

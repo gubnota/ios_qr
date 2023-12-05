@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94CEBBDA2B1F3E6F00EC8F97 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */; };
-		94CEBBDB2B1F3E6F00EC8F97 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */; };
+		94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */; };
+		94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94905DD52B1FAA6A00AE65E2 /* Glyph.xib */; };
+		94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD92B1FAF3D00AE65E2 /* Line.swift */; };
+		94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */; };
 		94CEBBDE2B1F475D00EC8F97 /* SVGPath in Frameworks */ = {isa = PBXBuildFile; productRef = 94CEBBDD2B1F475D00EC8F97 /* SVGPath */; };
 		94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */; };
 		94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */; };
@@ -19,8 +21,8 @@
 		94E70FE82B1E4B2300B71BBE /* uikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FE72B1E4B2300B71BBE /* uikitTests.swift */; };
 		94E70FF22B1E4B2300B71BBE /* uikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FF12B1E4B2300B71BBE /* uikitUITests.swift */; };
 		94E70FF42B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FF32B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift */; };
-		94E710032B1E51DF00B71BBE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710022B1E51DF00B71BBE /* ViewController2.swift */; };
-		94E710072B1E540100B71BBE /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E710062B1E540100B71BBE /* View2.xib */; };
+		94E710032B1E51DF00B71BBE /* ListLettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710022B1E51DF00B71BBE /* ListLettersVC.swift */; };
+		94E710072B1E540100B71BBE /* ListLetters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E710062B1E540100B71BBE /* ListLetters.xib */; };
 		94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710092B1E5C9500B71BBE /* ItemCell.swift */; };
 		94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E7100A2B1E5C9500B71BBE /* ItemCell.xib */; };
 /* End PBXBuildFile section */
@@ -43,8 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Glyph.swift; path = uikit/Glyph/Glyph.swift; sourceTree = SOURCE_ROOT; };
-		94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Glyph.xib; path = uikit/Glyph/Glyph.xib; sourceTree = SOURCE_ROOT; };
+		94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlyphVC.swift; sourceTree = "<group>"; };
+		94905DD52B1FAA6A00AE65E2 /* Glyph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glyph.xib; sourceTree = "<group>"; };
+		94905DD92B1FAF3D00AE65E2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		94E70FCD2B1E4B2200B71BBE /* uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +62,8 @@
 		94E70FED2B1E4B2300B71BBE /* uikitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uikitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70FF12B1E4B2300B71BBE /* uikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikitUITests.swift; sourceTree = "<group>"; };
 		94E70FF32B1E4B2300B71BBE /* uikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		94E710022B1E51DF00B71BBE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		94E710062B1E540100B71BBE /* View2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
+		94E710022B1E51DF00B71BBE /* ListLettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLettersVC.swift; sourceTree = "<group>"; };
+		94E710062B1E540100B71BBE /* ListLetters.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListLetters.xib; sourceTree = "<group>"; };
 		94E710092B1E5C9500B71BBE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		94E7100A2B1E5C9500B71BBE /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94905DD32B1FAA6A00AE65E2 /* Glyph */ = {
+			isa = PBXGroup;
+			children = (
+				94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */,
+				94905DD52B1FAA6A00AE65E2 /* Glyph.xib */,
+			);
+			path = Glyph;
+			sourceTree = "<group>";
+		};
+		94905DD82B1FAF1A00AE65E2 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				94905DD92B1FAF3D00AE65E2 /* Line.swift */,
+				94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
 		94E70FC42B1E4B2200B71BBE = {
 			isa = PBXGroup;
 			children = (
@@ -113,15 +135,17 @@
 		94E70FCF2B1E4B2200B71BBE /* uikit */ = {
 			isa = PBXGroup;
 			children = (
+				94905DD82B1FAF1A00AE65E2 /* CoreGraphics */,
+				94905DD32B1FAA6A00AE65E2 /* Glyph */,
 				94E710082B1E5B8200B71BBE /* ItemCell */,
 				94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */,
 				94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */,
 				94E70FD42B1E4B2200B71BBE /* ViewController.swift */,
-				94E710022B1E51DF00B71BBE /* ViewController2.swift */,
+				94E710022B1E51DF00B71BBE /* ListLettersVC.swift */,
 				94E70FD62B1E4B2200B71BBE /* Main.storyboard */,
 				94E70FD92B1E4B2300B71BBE /* Assets.xcassets */,
 				94E70FDB2B1E4B2300B71BBE /* LaunchScreen.storyboard */,
-				94E710062B1E540100B71BBE /* View2.xib */,
+				94E710062B1E540100B71BBE /* ListLetters.xib */,
 				94E70FDE2B1E4B2300B71BBE /* Info.plist */,
 			);
 			path = uikit;
@@ -149,8 +173,6 @@
 			children = (
 				94E710092B1E5C9500B71BBE /* ItemCell.swift */,
 				94E7100A2B1E5C9500B71BBE /* ItemCell.xib */,
-				94CEBBD82B1F3E6F00EC8F97 /* Glyph.swift */,
-				94CEBBD92B1F3E6F00EC8F97 /* Glyph.xib */,
 			);
 			path = ItemCell;
 			sourceTree = "<group>";
@@ -265,12 +287,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */,
 				94E70FDD2B1E4B2300B71BBE /* LaunchScreen.storyboard in Resources */,
 				94E70FDA2B1E4B2300B71BBE /* Assets.xcassets in Resources */,
 				94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */,
 				94E70FD82B1E4B2200B71BBE /* Main.storyboard in Resources */,
-				94CEBBDB2B1F3E6F00EC8F97 /* Glyph.xib in Resources */,
-				94E710072B1E540100B71BBE /* View2.xib in Resources */,
+				94E710072B1E540100B71BBE /* ListLetters.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */,
-				94E710032B1E51DF00B71BBE /* ViewController2.swift in Sources */,
+				94E710032B1E51DF00B71BBE /* ListLettersVC.swift in Sources */,
+				94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */,
+				94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */,
 				94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */,
 				94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */,
-				94CEBBDA2B1F3E6F00EC8F97 /* Glyph.swift in Sources */,
+				94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */,
 				94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
