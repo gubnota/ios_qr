@@ -3,15 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940E70362B219C4E00667885 /* Curves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E70352B219C4E00667885 /* Curves.swift */; };
+		946D47FE2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */; };
+		947199462B37588D00FA2DF1 /* FillingLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */; };
+		947199482B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */; };
+		947B4AA52B395CED00525DAA /* ListLettersViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */; };
 		94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */; };
 		94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94905DD52B1FAA6A00AE65E2 /* Glyph.xib */; };
 		94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD92B1FAF3D00AE65E2 /* Line.swift */; };
 		94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */; };
-		94CEBBDE2B1F475D00EC8F97 /* SVGPath in Frameworks */ = {isa = PBXBuildFile; productRef = 94CEBBDD2B1F475D00EC8F97 /* SVGPath */; };
 		94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */; };
 		94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */; };
 		94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD42B1E4B2200B71BBE /* ViewController.swift */; };
@@ -45,11 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		940E70352B219C4E00667885 /* Curves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curves.swift; sourceTree = "<group>"; };
+		946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
+		947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillingLayoutDelegate.swift; sourceTree = "<group>"; };
+		947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircularCollectionViewLayout.swift; sourceTree = "<group>"; };
+		947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLettersViewLayout.swift; sourceTree = "<group>"; };
 		94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlyphVC.swift; sourceTree = "<group>"; };
 		94905DD52B1FAA6A00AE65E2 /* Glyph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glyph.xib; sourceTree = "<group>"; };
 		94905DD92B1FAF3D00AE65E2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		94E70FCD2B1E4B2200B71BBE /* uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E70FCD2B1E4B2200B71BBE /* gopicar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gopicar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		94E70FD42B1E4B2200B71BBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CEBBDE2B1F475D00EC8F97 /* SVGPath in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		947199442B37586200FA2DF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */,
+				947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */,
+				946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */,
+				947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		94905DD32B1FAA6A00AE65E2 /* Glyph */ = {
 			isa = PBXGroup;
 			children = (
 				94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */,
+				940E70352B219C4E00667885 /* Curves.swift */,
 				94905DD52B1FAA6A00AE65E2 /* Glyph.xib */,
 			);
 			path = Glyph;
@@ -125,7 +145,7 @@
 		94E70FCE2B1E4B2200B71BBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94E70FCD2B1E4B2200B71BBE /* uikit.app */,
+				94E70FCD2B1E4B2200B71BBE /* gopicar.app */,
 				94E70FE32B1E4B2300B71BBE /* uikitTests.xctest */,
 				94E70FED2B1E4B2300B71BBE /* uikitUITests.xctest */,
 			);
@@ -135,6 +155,7 @@
 		94E70FCF2B1E4B2200B71BBE /* uikit */ = {
 			isa = PBXGroup;
 			children = (
+				947199442B37586200FA2DF1 /* UI */,
 				94905DD82B1FAF1A00AE65E2 /* CoreGraphics */,
 				94905DD32B1FAA6A00AE65E2 /* Glyph */,
 				94E710082B1E5B8200B71BBE /* ItemCell */,
@@ -180,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94E70FCC2B1E4B2200B71BBE /* uikit */ = {
+		94E70FCC2B1E4B2200B71BBE /* gopicar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E70FF72B1E4B2300B71BBE /* Build configuration list for PBXNativeTarget "uikit" */;
+			buildConfigurationList = 94E70FF72B1E4B2300B71BBE /* Build configuration list for PBXNativeTarget "gopicar" */;
 			buildPhases = (
 				94E70FC92B1E4B2200B71BBE /* Sources */,
 				94E70FCA2B1E4B2200B71BBE /* Frameworks */,
@@ -192,12 +213,11 @@
 			);
 			dependencies = (
 			);
-			name = uikit;
+			name = gopicar;
 			packageProductDependencies = (
-				94CEBBDD2B1F475D00EC8F97 /* SVGPath */,
 			);
 			productName = uikit;
-			productReference = 94E70FCD2B1E4B2200B71BBE /* uikit.app */;
+			productReference = 94E70FCD2B1E4B2200B71BBE /* gopicar.app */;
 			productType = "com.apple.product-type.application";
 		};
 		94E70FE22B1E4B2300B71BBE /* uikitTests */ = {
@@ -259,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94E70FC82B1E4B2200B71BBE /* Build configuration list for PBXProject "uikit" */;
+			buildConfigurationList = 94E70FC82B1E4B2200B71BBE /* Build configuration list for PBXProject "gopicar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,13 +289,12 @@
 			);
 			mainGroup = 94E70FC42B1E4B2200B71BBE;
 			packageReferences = (
-				94CEBBDC2B1F475D00EC8F97 /* XCLocalSwiftPackageReference "SVGPath" */,
 			);
 			productRefGroup = 94E70FCE2B1E4B2200B71BBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94E70FCC2B1E4B2200B71BBE /* uikit */,
+				94E70FCC2B1E4B2200B71BBE /* gopicar */,
 				94E70FE22B1E4B2300B71BBE /* uikitTests */,
 				94E70FEC2B1E4B2300B71BBE /* uikitUITests */,
 			);
@@ -317,11 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947199482B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift in Sources */,
+				946D47FE2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift in Sources */,
 				94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */,
 				94E710032B1E51DF00B71BBE /* ListLettersVC.swift in Sources */,
 				94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */,
+				947B4AA52B395CED00525DAA /* ListLettersViewLayout.swift in Sources */,
 				94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */,
 				94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */,
+				940E70362B219C4E00667885 /* Curves.swift in Sources */,
+				947199462B37588D00FA2DF1 /* FillingLayoutDelegate.swift in Sources */,
 				94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */,
 				94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */,
 				94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */,
@@ -350,12 +374,12 @@
 /* Begin PBXTargetDependency section */
 		94E70FE52B1E4B2300B71BBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94E70FCC2B1E4B2200B71BBE /* uikit */;
+			target = 94E70FCC2B1E4B2200B71BBE /* gopicar */;
 			targetProxy = 94E70FE42B1E4B2300B71BBE /* PBXContainerItemProxy */;
 		};
 		94E70FEF2B1E4B2300B71BBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94E70FCC2B1E4B2200B71BBE /* uikit */;
+			target = 94E70FCC2B1E4B2200B71BBE /* gopicar */;
 			targetProxy = 94E70FEE2B1E4B2300B71BBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,6 +533,7 @@
 				DEVELOPMENT_TEAM = RSD67YH647;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uikit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Гопикар";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -520,7 +545,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.uikit;
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.generic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -538,6 +563,7 @@
 				DEVELOPMENT_TEAM = RSD67YH647;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uikit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Гопикар";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -549,7 +575,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.uikit;
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.generic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,7 +599,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/word_uikit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/word_uikit";
 			};
 			name = Debug;
 		};
@@ -593,7 +619,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/word_uikit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/word_uikit";
 			};
 			name = Release;
 		};
@@ -636,7 +662,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94E70FC82B1E4B2200B71BBE /* Build configuration list for PBXProject "uikit" */ = {
+		94E70FC82B1E4B2200B71BBE /* Build configuration list for PBXProject "gopicar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94E70FF52B1E4B2300B71BBE /* Debug */,
@@ -645,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94E70FF72B1E4B2300B71BBE /* Build configuration list for PBXNativeTarget "uikit" */ = {
+		94E70FF72B1E4B2300B71BBE /* Build configuration list for PBXNativeTarget "gopicar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94E70FF82B1E4B2300B71BBE /* Debug */,
@@ -673,20 +699,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		94CEBBDC2B1F475D00EC8F97 /* XCLocalSwiftPackageReference "SVGPath" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = SVGPath;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		94CEBBDD2B1F475D00EC8F97 /* SVGPath */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SVGPath;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94E70FC52B1E4B2200B71BBE /* Project object */;
 }

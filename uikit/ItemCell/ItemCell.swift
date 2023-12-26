@@ -14,5 +14,7 @@ class ItemCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    static func nib() -> UINib {
+        return UINib(nibName: "ItemCell", bundle: nil)
+    }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Curves.getAa():Curves.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(CGPath *)rectanglePath._path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Curves.getAltAa():Curves.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(CGPath *)bezierPath._path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
