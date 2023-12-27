@@ -11,7 +11,6 @@
 		946D47FE2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */; };
 		947199462B37588D00FA2DF1 /* FillingLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */; };
 		947199482B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */; };
-		947B4AA52B395CED00525DAA /* ListLettersViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */; };
 		94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */; };
 		94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94905DD52B1FAA6A00AE65E2 /* Glyph.xib */; };
 		94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD92B1FAF3D00AE65E2 /* Line.swift */; };
@@ -29,6 +28,9 @@
 		94E710072B1E540100B71BBE /* ListLetters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E710062B1E540100B71BBE /* ListLetters.xib */; };
 		94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E710092B1E5C9500B71BBE /* ItemCell.swift */; };
 		94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E7100A2B1E5C9500B71BBE /* ItemCell.xib */; };
+		94EBD8AC2B3B46D1008D1F75 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EBD8AB2B3B46D1008D1F75 /* Participant.swift */; };
+		94EE783C2B3B13780030179D /* Qr_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE783A2B3B13780030179D /* Qr_VC.swift */; };
+		94EE783D2B3B13780030179D /* Qr_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EE783B2B3B13780030179D /* Qr_VC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
 		947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillingLayoutDelegate.swift; sourceTree = "<group>"; };
 		947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircularCollectionViewLayout.swift; sourceTree = "<group>"; };
-		947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLettersViewLayout.swift; sourceTree = "<group>"; };
 		94905DD42B1FAA6A00AE65E2 /* GlyphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlyphVC.swift; sourceTree = "<group>"; };
 		94905DD52B1FAA6A00AE65E2 /* Glyph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glyph.xib; sourceTree = "<group>"; };
 		94905DD92B1FAF3D00AE65E2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -75,6 +76,9 @@
 		94E710062B1E540100B71BBE /* ListLetters.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListLetters.xib; sourceTree = "<group>"; };
 		94E710092B1E5C9500B71BBE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		94E7100A2B1E5C9500B71BBE /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		94EBD8AB2B3B46D1008D1F75 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		94EE783A2B3B13780030179D /* Qr_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qr_VC.swift; sourceTree = "<group>"; };
+		94EE783B2B3B13780030179D /* Qr_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Qr_VC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,6 @@
 				947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */,
 				947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */,
 				946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */,
-				947B4AA42B395CED00525DAA /* ListLettersViewLayout.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -155,18 +158,16 @@
 		94E70FCF2B1E4B2200B71BBE /* uikit */ = {
 			isa = PBXGroup;
 			children = (
+				94EBD8AA2B3B469A008D1F75 /* Model */,
+				94EBD8A92B3B3929008D1F75 /* VC */,
 				947199442B37586200FA2DF1 /* UI */,
 				94905DD82B1FAF1A00AE65E2 /* CoreGraphics */,
 				94905DD32B1FAA6A00AE65E2 /* Glyph */,
 				94E710082B1E5B8200B71BBE /* ItemCell */,
 				94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */,
 				94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */,
-				94E70FD42B1E4B2200B71BBE /* ViewController.swift */,
-				94E710022B1E51DF00B71BBE /* ListLettersVC.swift */,
-				94E70FD62B1E4B2200B71BBE /* Main.storyboard */,
 				94E70FD92B1E4B2300B71BBE /* Assets.xcassets */,
 				94E70FDB2B1E4B2300B71BBE /* LaunchScreen.storyboard */,
-				94E710062B1E540100B71BBE /* ListLetters.xib */,
 				94E70FDE2B1E4B2300B71BBE /* Info.plist */,
 			);
 			path = uikit;
@@ -196,6 +197,27 @@
 				94E7100A2B1E5C9500B71BBE /* ItemCell.xib */,
 			);
 			path = ItemCell;
+			sourceTree = "<group>";
+		};
+		94EBD8A92B3B3929008D1F75 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				94EE783A2B3B13780030179D /* Qr_VC.swift */,
+				94EE783B2B3B13780030179D /* Qr_VC.xib */,
+				94E70FD42B1E4B2200B71BBE /* ViewController.swift */,
+				94E710022B1E51DF00B71BBE /* ListLettersVC.swift */,
+				94E70FD62B1E4B2200B71BBE /* Main.storyboard */,
+				94E710062B1E540100B71BBE /* ListLetters.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		94EBD8AA2B3B469A008D1F75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94EBD8AB2B3B46D1008D1F75 /* Participant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +285,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					qr,
+				);
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
@@ -307,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */,
+				94EE783D2B3B13780030179D /* Qr_VC.xib in Resources */,
 				94E70FDD2B1E4B2300B71BBE /* LaunchScreen.storyboard in Resources */,
 				94E70FDA2B1E4B2300B71BBE /* Assets.xcassets in Resources */,
 				94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */,
@@ -337,11 +363,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				947199482B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift in Sources */,
+				94EE783C2B3B13780030179D /* Qr_VC.swift in Sources */,
 				946D47FE2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift in Sources */,
+				94EBD8AC2B3B46D1008D1F75 /* Participant.swift in Sources */,
 				94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */,
 				94E710032B1E51DF00B71BBE /* ListLettersVC.swift in Sources */,
 				94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */,
-				947B4AA52B395CED00525DAA /* ListLettersViewLayout.swift in Sources */,
 				94905DD62B1FAA6A00AE65E2 /* GlyphVC.swift in Sources */,
 				94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */,
 				940E70362B219C4E00667885 /* Curves.swift in Sources */,
@@ -534,11 +561,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uikit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Гопикар";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR codes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,11 +593,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uikit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Гопикар";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR codes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

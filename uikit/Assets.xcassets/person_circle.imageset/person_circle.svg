@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="264px" viewBox="0 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>person circle</title>
+    <g id="person-circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="check" transform="translate(9, 9)" fill="#56CB4C" fill-rule="nonzero">
+            <path d="M123.5,0 C55.2855469,0 0,55.2855469 0,123.5 C0,191.714453 55.2855469,247 123.5,247 C191.714453,247 247,191.714453 247,123.5 C247,55.2855469 191.714453,0 123.5,0 Z M217.909961,75.4025391 L101.646289,191.666211 L101.646289,191.666211 L93.3486328,199.963867 L29.0900391,135.705273 L57.4564453,107.338867 L93.396875,143.279297 L189.591797,47.084375 L217.909961,75.4025391 L217.909961,75.4025391 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
