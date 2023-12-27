@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Participants_VC: ViewController, UITableViewDataSource, UITableViewDelegate {
+class Participants_VC: ViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var table: UITableView!
     
@@ -29,16 +29,23 @@ class Participants_VC: ViewController, UITableViewDataSource, UITableViewDelegat
 //        cell.subviews.first?.bounds = CGRect(x: 0, y: 0, width: 400, height: 200)
          return cell
     }
+    
 
-    
-    
+    // MARK: - Table view delegate
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pm.participant = pm.participants[indexPath.row]
+        // Handle the tap event for the selected cell
+        let destCtrlr = Portrait_VC(nibName: "Portrait_VC", bundle: nil)
+        self.navigationController?.pushViewController(destCtrlr, animated: true)
+    }
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         table.register(UINib(nibName: "ParticipantCell", bundle: nil), forCellReuseIdentifier: "ParticipantCell")
         table.dataSource = self
         table.delegate = self
-        table.estimatedRowHeight = 88.0
         // Do any additional setup after loading the view.
     }
 

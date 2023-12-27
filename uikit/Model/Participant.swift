@@ -34,11 +34,12 @@ class ParticipantManager: ObservableObject {
     @Published public var scannedCode = "";
     @Published public var state: NetworkState = NetworkState.initial;
     @Published public var uiState: UIState = UIState.empty;
+    @Published public var participant: ParticipantT?
     let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
 
     static let shared = ParticipantManager()
     private init() {
-        setToken(token: "130d651e-a181-493d-a604-5b3f90bb2ee1")
+        
         if (getToken() == ""){
             setToken(token: "130d651e-a181-493d-a604-5b3f90bb2eed")
         }
