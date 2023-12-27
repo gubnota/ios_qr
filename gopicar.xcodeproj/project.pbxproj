@@ -15,6 +15,11 @@
 		94905DD72B1FAA6A00AE65E2 /* Glyph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94905DD52B1FAA6A00AE65E2 /* Glyph.xib */; };
 		94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DD92B1FAF3D00AE65E2 /* Line.swift */; };
 		94905DDC2B1FAF7800AE65E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */; };
+		94BC43592B3C221100763643 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 94BC43582B3C221100763643 /* Toast */; };
+		94BC435C2B3C408300763643 /* Participants_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC435A2B3C408300763643 /* Participants_VC.swift */; };
+		94BC435D2B3C408300763643 /* Participants_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BC435B2B3C408300763643 /* Participants_VC.xib */; };
+		94BC43602B3C417800763643 /* ParticipantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BC435E2B3C417800763643 /* ParticipantCell.swift */; };
+		94BC43612B3C417800763643 /* ParticipantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BC435F2B3C417800763643 /* ParticipantCell.xib */; };
 		94E70FD12B1E4B2200B71BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */; };
 		94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */; };
 		94E70FD52B1E4B2200B71BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E70FD42B1E4B2200B71BBE /* ViewController.swift */; };
@@ -59,6 +64,10 @@
 		94905DD52B1FAA6A00AE65E2 /* Glyph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glyph.xib; sourceTree = "<group>"; };
 		94905DD92B1FAF3D00AE65E2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		94905DDB2B1FAF7800AE65E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		94BC435A2B3C408300763643 /* Participants_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participants_VC.swift; sourceTree = "<group>"; };
+		94BC435B2B3C408300763643 /* Participants_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Participants_VC.xib; sourceTree = "<group>"; };
+		94BC435E2B3C417800763643 /* ParticipantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantCell.swift; sourceTree = "<group>"; };
+		94BC435F2B3C417800763643 /* ParticipantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantCell.xib; sourceTree = "<group>"; };
 		94E70FCD2B1E4B2200B71BBE /* gopicar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gopicar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70FD02B1E4B2200B71BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E70FD22B1E4B2200B71BBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BC43592B3C221100763643 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,8 @@
 				947199452B37588D00FA2DF1 /* FillingLayoutDelegate.swift */,
 				947199472B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift */,
 				946D47FD2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift */,
+				94BC435E2B3C417800763643 /* ParticipantCell.swift */,
+				94BC435F2B3C417800763643 /* ParticipantCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -208,6 +220,8 @@
 				94E710022B1E51DF00B71BBE /* ListLettersVC.swift */,
 				94E70FD62B1E4B2200B71BBE /* Main.storyboard */,
 				94E710062B1E540100B71BBE /* ListLetters.xib */,
+				94BC435A2B3C408300763643 /* Participants_VC.swift */,
+				94BC435B2B3C408300763643 /* Participants_VC.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 			);
 			name = gopicar;
 			packageProductDependencies = (
+				94BC43582B3C221100763643 /* Toast */,
 			);
 			productName = uikit;
 			productReference = 94E70FCD2B1E4B2200B71BBE /* gopicar.app */;
@@ -314,6 +329,7 @@
 			);
 			mainGroup = 94E70FC42B1E4B2200B71BBE;
 			packageReferences = (
+				94BC43572B3C221100763643 /* XCRemoteSwiftPackageReference "toast-swift" */,
 			);
 			productRefGroup = 94E70FCE2B1E4B2200B71BBE /* Products */;
 			projectDirPath = "";
@@ -335,8 +351,10 @@
 				94EE783D2B3B13780030179D /* Qr_VC.xib in Resources */,
 				94E70FDD2B1E4B2300B71BBE /* LaunchScreen.storyboard in Resources */,
 				94E70FDA2B1E4B2300B71BBE /* Assets.xcassets in Resources */,
+				94BC43612B3C417800763643 /* ParticipantCell.xib in Resources */,
 				94E7100C2B1E5C9500B71BBE /* ItemCell.xib in Resources */,
 				94E70FD82B1E4B2200B71BBE /* Main.storyboard in Resources */,
+				94BC435D2B3C408300763643 /* Participants_VC.xib in Resources */,
 				94E710072B1E540100B71BBE /* ListLetters.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947199482B37597700FA2DF1 /* CustomCircularCollectionViewLayout.swift in Sources */,
+				94BC435C2B3C408300763643 /* Participants_VC.swift in Sources */,
 				94EE783C2B3B13780030179D /* Qr_VC.swift in Sources */,
 				946D47FE2B389CB200177169 /* UICollectionViewDelegateFlowLayout.swift in Sources */,
 				94EBD8AC2B3B46D1008D1F75 /* Participant.swift in Sources */,
@@ -376,6 +395,7 @@
 				94E70FD32B1E4B2200B71BBE /* SceneDelegate.swift in Sources */,
 				94905DDA2B1FAF3E00AE65E2 /* Line.swift in Sources */,
 				94E7100B2B1E5C9500B71BBE /* ItemCell.swift in Sources */,
+				94BC43602B3C417800763643 /* ParticipantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +750,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94BC43572B3C221100763643 /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94BC43582B3C221100763643 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94BC43572B3C221100763643 /* XCRemoteSwiftPackageReference "toast-swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94E70FC52B1E4B2200B71BBE /* Project object */;
 }

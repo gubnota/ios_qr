@@ -22,16 +22,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="w8x-Yn-NRQ">
                                 <rect key="frame" x="30" y="64" width="315" height="573"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="participants" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-SJ-7Er">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="participants" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-SJ-7Er">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="102"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="late" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-GV-VNH">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="late" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-GV-VNH">
                                         <rect key="frame" x="0.0" y="157" width="315" height="102"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="rG7-Xz-mOi" userLabel="register">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="rG7-Xz-mOi" userLabel="register">
                                         <rect key="frame" x="0.0" y="314" width="315" height="102"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="yoB-eh-Waa">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="yoB-eh-Waa">
                                         <rect key="frame" x="0.0" y="471" width="315" height="102"/>
                                     </imageView>
                                 </subviews>
@@ -53,6 +53,12 @@
                     <navigationItem key="navigationItem" id="u8x-gw-GMr">
                         <nil key="title"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="about" destination="yoB-eh-Waa" id="BZ5-zZ-2wJ"/>
+                        <outlet property="late" destination="vGc-GV-VNH" id="wjD-u4-oHp"/>
+                        <outlet property="participants" destination="Je5-SJ-7Er" id="Rwn-pH-ENF"/>
+                        <outlet property="register" destination="rG7-Xz-mOi" id="AbS-il-i02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

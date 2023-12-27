@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 
 class Qr_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    
+    var pm: ParticipantManager = ParticipantManager.shared;
     var captureSession = AVCaptureSession()
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
@@ -38,6 +38,7 @@ class Qr_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         // Get the back-facing camera for capturing videos
         guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
             print("Failed to get the camera device")
+            pm.showToast(message: "Не удалось получить доступ к камере")
             return
         }
         
@@ -93,6 +94,7 @@ class Qr_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         if metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRect.zero
             messageLabel?.text = "No QR code is detected"
+//            pm.showToast(message: "Направьте на гопикар…")
             return
         }
         
@@ -109,6 +111,19 @@ class Qr_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 var pm = ParticipantManager.shared;
                 pm.scannedCode = metadataObj.stringValue ?? ""
                 self.navigationController?.popViewController(animated: true)
+                if (pm.isValidQr()){
+                    if (pm.isToken()){
+                        pm.showToast(message: "Токен установлен!")
+                        pm.setToken();
+                    }
+                    else {
+                        pm.showToast(message: "Пользователь отсканирован")
+
+                    }
+                }
+                else {
+                    pm.showToast(message: "Неверный код")
+                }
 
             }
         }

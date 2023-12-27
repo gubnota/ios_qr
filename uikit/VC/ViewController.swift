@@ -9,11 +9,58 @@ import UIKit
 
 class ViewController: UIViewController {
     var pm: ParticipantManager = ParticipantManager.shared;
+
+    @IBOutlet weak var participants: UIImageView!
+    @IBOutlet weak var about: UIImageView!
+    @IBOutlet weak var register: UIImageView!
+    @IBOutlet weak var late: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 //        self.createNewView()
+        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture4 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        participants?.addGestureRecognizer(tapGesture1)
+        about?.addGestureRecognizer(tapGesture2)
+        register?.addGestureRecognizer(tapGesture3)
+        late?.addGestureRecognizer(tapGesture4)
+        // late.isUserInteractionEnabled = true
     }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        if(tappedImage == nil) {
+            pm.showToast(message: "nil")
+            return
+        }
+        switch tappedImage {
+        case participants:
+            participantsHandler()
+        case about:
+            pm.showToast(message: "about")
+        case register:
+            registerHandler()
+        default:
+            pm.showToast(message: "late")
+        }
+        pm.haptic()
+        // Your action
+    }
+
+    func registerHandler(){
+        let destCtrlr = Qr_VC(nibName: "Qr_VC", bundle: nil)
+        self.navigationController?.pushViewController(destCtrlr, animated: true)
+    }
+    func participantsHandler(){
+        let destCtrlr = Participants_VC(nibName: nil, bundle: nil)
+        self.navigationController?.pushViewController(destCtrlr, animated: true)
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         print("scanned \(pm.scannedCode)")
 //        createNewView()
