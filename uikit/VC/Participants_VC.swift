@@ -12,11 +12,11 @@ class Participants_VC: ViewController, UITableViewDataSource, UITableViewDelegat
     @IBOutlet weak var table: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pm.participants.count
+        return pm.filtered.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {//
-        var items = pm.participants;
+        var items = pm.filtered;
         let cell = tableView.dequeueReusableCell(withIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCell
         //        let cell = UITableViewCell()
         cell.name?.text = items[indexPath.row].fullname
@@ -34,7 +34,10 @@ class Participants_VC: ViewController, UITableViewDataSource, UITableViewDelegat
     // MARK: - Table view delegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        pm.participant = pm.participants[indexPath.row]
+        pm.haptic()
+        tableView.deselectRow(at: indexPath, animated: true)
+//        guard indexPath.row == 1 else { return }
+        pm.participant = pm.filtered[indexPath.row]
         // Handle the tap event for the selected cell
         let destCtrlr = Portrait_VC(nibName: "Portrait_VC", bundle: nil)
         self.navigationController?.pushViewController(destCtrlr, animated: true)

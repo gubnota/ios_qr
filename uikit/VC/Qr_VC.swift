@@ -110,20 +110,20 @@ class Qr_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 messageLabel.text = metadataObj.stringValue
                 var pm = ParticipantManager.shared;
                 pm.scannedCode = metadataObj.stringValue ?? ""
-                self.navigationController?.popViewController(animated: true)
                 if (pm.isValidQr()){
                     if (pm.isToken()){
                         pm.showToast(message: "Токен установлен!")
                         pm.setToken();
                     }
                     else {
-                        pm.showToast(message: "Пользователь отсканирован")
-
+                        pm.registerParticipant(ctrlr: self)
                     }
                 }
                 else {
                     pm.showToast(message: "Неверный код")
                 }
+//                self.navigationController?.popToRootViewController(animated: false)
+                captureSession.stopRunning()
 
             }
         }

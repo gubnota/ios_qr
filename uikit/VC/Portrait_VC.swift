@@ -11,7 +11,7 @@ class Portrait_VC: UIViewController {
     var pm: ParticipantManager = ParticipantManager.shared;
 
     func generateQRCode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
+        let data = string.data(using: String.Encoding.utf8)
 
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
@@ -25,18 +25,34 @@ class Portrait_VC: UIViewController {
         return nil
     }
 
-    
-    @IBOutlet weak var ava: UIImageView!
     @IBOutlet weak var bg: UIView!
-    @IBOutlet weak var qr: UIImageView!
+    @IBOutlet weak var ava: UIImageView!
+    @IBOutlet weak var no: UILabel!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var qr: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = pm.participant?.fullname;
         let image = generateQRCode(from: "\(pm.participant?.fullname ?? ""):\(pm.participant?.id ?? "")")
         qr.image = image
+        bg.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+        bg.layer.cornerRadius = 10.0
+        bg.layer.borderWidth = 10.0
+        if(pm.participant?.number != nil && pm.participant!.number > 0 ) {
+//            NotificationBanner.show("Пользователь был зарегистрирован!")
+            pm.showToast(message: "Пользователь был зарегистрирован!")
+            no.text = "\(pm.participant!.number)"
+            ava.image = pm.getAvatar(i: pm.participant!.number)
+        }
+        else {
+            no.text = ""
+//            NotificationBanner.show("Пользователь был зарегистрирован!")
+//            pm.showToast(message: "Пользователь успешно зарегистрирован!")
+        }
         // Do any additional setup after loading the view.
-    }
+        pm.play()
+}
 
 
     /*

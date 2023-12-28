@@ -41,21 +41,34 @@ class ViewController: UIViewController {
         case participants:
             participantsHandler()
         case about:
-            pm.showToast(message: "about")
+            register2Handler()//pm.showToast(message: "about")
         case register:
             registerHandler()
         default:
-            pm.showToast(message: "late")
+            onlyLateHandler()
         }
         pm.haptic()
         // Your action
     }
-
+    func register2Handler() {
+//        if(pm.participants.count<1) {return;}
+//        pm.participant = pm.participants[0]
+//        let destCtrlr = Portrait_VC(nibName: "Portrait_VC", bundle: nil)
+//        self.navigationController?.pushViewController(destCtrlr, animated: true)
+    }
+    
     func registerHandler(){
         let destCtrlr = Qr_VC(nibName: "Qr_VC", bundle: nil)
         self.navigationController?.pushViewController(destCtrlr, animated: true)
     }
     func participantsHandler(){
+        pm.filtered = pm.participants
+        pm.filter(search: nil)
+        let destCtrlr = Participants_VC(nibName: nil, bundle: nil)
+        self.navigationController?.pushViewController(destCtrlr, animated: true)
+    }
+    func onlyLateHandler(){
+        pm.onlyLate()
         let destCtrlr = Participants_VC(nibName: nil, bundle: nil)
         self.navigationController?.pushViewController(destCtrlr, animated: true)
     }
@@ -88,7 +101,6 @@ class ViewController: UIViewController {
         
             if let bgImg = UIImage(named: "pockemon/abra", in: Bundle.main, compatibleWith: nil) {
                 newV.setBackgroundImage(bgImg, for: .normal)
-            
         }
         newV.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 //        newV.frame = CGRect(x: 0, y: 0, width:self.view.subviews.first?.frame.width ?? 200, height: self.view.subviews.first?.frame.width ?? 164);
