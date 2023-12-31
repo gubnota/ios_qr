@@ -36,6 +36,9 @@ class Portrait_VC: UIViewController {
         name.text = pm.participant?.fullname;
         let image = generateQRCode(from: "\(pm.participant?.fullname ?? ""):\(pm.participant?.id ?? "")")
         qr.image = image
+        ava.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.6)
+        ava.layer.borderWidth = 1.0
+        ava.layer.cornerRadius = 32
         bg.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
         bg.layer.cornerRadius = 10.0
         bg.layer.borderWidth = 10.0
